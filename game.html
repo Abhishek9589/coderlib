@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder's Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/icon.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner"
+        class="flex items-center justify-center w-full h-[100vh] text-gray-900 dark:text-gray-100 dark:bg-gray-950">
+        <div>
+            <h1 class="text-xl md:text-7xl font-bold flex items-center">L
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="animate-spin"
+                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM13.6695 15.9999H10.3295L8.95053 17.8969L9.5044 19.6031C10.2897 19.8607 11.1286 20 12 20C12.8714 20 13.7103 19.8607 14.4956 19.6031L15.0485 17.8969L13.6695 15.9999ZM5.29354 10.8719L4.00222 11.8095L4 12C4 13.7297 4.54894 15.3312 5.4821 16.6397L7.39254 16.6399L8.71453 14.8199L7.68654 11.6499L5.29354 10.8719ZM18.7055 10.8719L16.3125 11.6499L15.2845 14.8199L16.6065 16.6399L18.5179 16.6397C19.4511 15.3312 20 13.7297 20 12L19.997 11.81L18.7055 10.8719ZM12 9.536L9.656 11.238L10.552 14H13.447L14.343 11.238L12 9.536ZM14.2914 4.33299L12.9995 5.27293V7.78993L15.6935 9.74693L17.9325 9.01993L18.4867 7.3168C17.467 5.90685 15.9988 4.84254 14.2914 4.33299ZM9.70757 4.33329C8.00021 4.84307 6.53216 5.90762 5.51261 7.31778L6.06653 9.01993L8.30554 9.74693L10.9995 7.78993V5.27293L9.70757 4.33329Z">
+                    </path>
+                </svg> ading . . .
+            </h1>
+        </div>
+    </div>
+
+    <!--Nav bar-->
+    <header class="bg-white scroll-smooth md:scroll-auto">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="md:flex md:items-center md:gap-12">
+                    <a class="block text-teal-600" href="./index.html">
+                        <span class="sr-only">Coders Library Home</span>
+                        <svg class="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.41 10.3847C1.14777 7.4194 2.85643 4.7861 5.2639 2.90424C7.6714 1.02234 10.6393 0 13.695 0C16.7507 0 19.7186 1.02234 22.1261 2.90424C24.5336 4.7861 26.2422 7.4194 26.98 10.3847H25.78C23.7557 10.3549 21.7729 10.9599 20.11 12.1147C20.014 12.1842 19.9138 12.2477 19.81 12.3047H19.67C19.5662 12.2477 19.466 12.1842 19.37 12.1147C17.6924 10.9866 15.7166 10.3841 13.695 10.3841C11.6734 10.3841 9.6976 10.9866 8.02 12.1147C7.924 12.1842 7.8238 12.2477 7.72 12.3047H7.58C7.4762 12.2477 7.376 12.1842 7.28 12.1147C5.6171 10.9599 3.6343 10.3549 1.61 10.3847H0.41ZM23.62 16.6547C24.236 16.175 24.9995 15.924 25.78 15.9447H27.39V12.7347H25.78C24.4052 12.7181 23.0619 13.146 21.95 13.9547C21.3243 14.416 20.5674 14.6649 19.79 14.6649C19.0126 14.6649 18.2557 14.416 17.63 13.9547C16.4899 13.1611 15.1341 12.7356 13.745 12.7356C12.3559 12.7356 11.0001 13.1611 9.86 13.9547C9.2343 14.416 8.4774 14.6649 7.7 14.6649C6.9226 14.6649 6.1657 14.416 5.54 13.9547C4.4144 13.1356 3.0518 12.7072 1.66 12.7347H0V15.9447H1.61C2.39051 15.924 3.154 16.175 3.77 16.6547C4.908 17.4489 6.2623 17.8747 7.65 17.8747C9.0377 17.8747 10.392 17.4489 11.53 16.6547C12.1468 16.1765 12.9097 15.9257 13.69 15.9447C14.4708 15.9223 15.2348 16.1735 15.85 16.6547C16.9901 17.4484 18.3459 17.8738 19.735 17.8738C21.1241 17.8738 22.4799 17.4484 23.62 16.6547ZM23.62 22.3947C24.236 21.915 24.9995 21.664 25.78 21.6847H27.39V18.4747H25.78C24.4052 18.4581 23.0619 18.886 21.95 19.6947C21.3243 20.156 20.5674 20.4049 19.79 20.4049C19.0126 20.4049 18.2557 20.156 17.63 19.6947C16.4899 18.9011 15.1341 18.4757 13.745 18.4757C12.3559 18.4757 11.0001 18.9011 9.86 19.6947C9.2343 20.156 8.4774 20.4049 7.7 20.4049C6.9226 20.4049 6.1657 20.156 5.54 19.6947C4.4144 18.8757 3.0518 18.4472 1.66 18.4747H0V21.6847H1.61C2.39051 21.664 3.154 21.915 3.77 22.3947C4.908 23.1889 6.2623 23.6147 7.65 23.6147C9.0377 23.6147 10.392 23.1889 11.53 22.3947C12.1468 21.9165 12.9097 21.6657 13.69 21.6847C14.4708 21.6623 15.2348 21.9135 15.85 22.3947C16.9901 23.1884 18.3459 23.6138 19.735 23.6138C21.1241 23.6138 22.4799 23.1884 23.62 22.3947Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="hidden md:block">
+                    <nav aria-label="Global">
+                        <ul class="flex items-center gap-6 text-sm">
+                            <li>
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="./course.html"> Courses
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="./tutorials.html">
+                                    Tutorials </a>
+                            </li>
+                            <li>
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="./blogs.html"> Blogs
+                                </a>
+                            </li>
+                            <li>
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="./Chat.html"> Chat </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="sm:flex sm:gap-4">
+                        <a class="rounded-md bg-gray-600 px-5 py-2.5 text-sm font-medium text-white shadow" href="#">
+                            Login
+                        </a>
+                        <div class="hidden sm:flex">
+                            <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600" href="#">
+                                Register
+                            </a>
+                        </div>
+                    </div>
+                    <div class="block md:hidden">
+                        <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--CTA-->
+
+    <section class="overflow-hidden bg-white-50 sm:grid sm:grid-cols-2 fade">
+        <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+            <div class="mx-auto max-w-xl text-center sm:text-left">
+                <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+                    Game Development
+                </h2>
+
+                <p class="hidden text-gray-500 md:mt-4 md:block">
+                    Game development is the process of creating video games, blending technical skills, artistry, and
+                    creativity. It involves conceptualizing the game idea, designing characters and environments,
+                    programming gameplay mechanics, and integrating sound, visuals, and story elements. Developers use
+                    tools like Unity, Unreal Engine, or Godot to build games, focusing on creating engaging mechanics,
+                    intuitive controls, and immersive experiences. The process includes planning, prototyping,
+                    production, testing, and refining to ensure the game is polished and delivers a captivating
+                    experience to players.
+                </p>
+
+                <div class="mt-4 md:mt-8 space-x-3 flex">
+                    <a href="https://roadmap.sh/game-developer"
+                        class="rounded-md bg-gray-600 px-5 py-2.5 text-sm font-medium text-white shadow">
+                        Roadmap
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <img alt="Students learning with Coders Library resources"
+            src="https://img.freepik.com/free-vector/gamers-play-video-game-different-hardware-platforms-cross-platform-play-cross-play-cross-platform-gaming-concept_335657-1819.jpg?t=st=1731860271~exp=1731863871~hmac=658e5334eb74912fa27bfcae3a09d9073a5433b393b0d9fa5be7b9aeac21139c&w=1380"
+            class="h-56 w-full object-cover sm:h-full" />
+    </section>
+
+    <!--Tutorials-->
+
+    <h1 class="bg-white text-black text-center py-5 text-6xl font-bold">Tutorials</h1>    
+    <section class="bg-gray-2 dark:bg-dark pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+                    <div
+                        class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3">
+                        <img src="https://i.ytimg.com/vi/EYt6uDr-PHQ/maxresdefault.jpg"
+                            alt="image" class="w-full" />
+                        <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                            <h3>
+                                <a href="javascript:void(0)"
+                                    class="text-dark dark:text-white hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
+                                    Brackeys
+                                </a>
+                            </h3>
+                            <p class="text-base leading-relaxed text-body-color dark:text-dark-6 mb-7">
+                                Brackeys is a top-quality game development channel offering tutorials on Unity,
+                                programming, and game design. Whether you're a beginner or looking to enhance your
+                                skills, Brackeys provides guidance to help you become a successful game developer.
+                            </p>
+                            <a href="https://www.youtube.com/@Brackeys"
+                                class="inline-block py-2 text-base font-medium transition border rounded-full text-body-color hover:border-primary hover:bg-blue-600 border-gray-300 px-7 hover:text-white dark:border-dark-300 dark:text-dark-600">
+                                Let's Learn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+                    <div
+                        class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3">
+                        <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2024/02/17-game-maker-s-toolkit-s-developing-series-is-creative-inspiration.jpg"
+                            alt="image" class="w-full" />
+                        <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                            <h3>
+                                <a href="javascript:void(0)"
+                                    class="text-dark dark:text-white hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
+                                    Game Maker's Toolkit
+                                </a>
+                            </h3>
+                            <p class="text-base leading-relaxed text-body-color mb-7">
+                                Game Maker's Toolkit is a popular channel hosted by Mark Brown that features content
+                                related to game design, level design and game production. With humorous commentary and
+                                gameplay videos, you can learn various game mechanics and game design elements.
+                            </p>
+                            <a href="https://www.youtube.com/@GMTK"
+                            class="inline-block py-2 text-base font-medium transition border rounded-full text-body-color hover:border-primary hover:bg-blue-600 border-gray-300 px-7 hover:text-white dark:border-dark-300 dark:text-dark-600">
+                            Let's Learn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+                    <div
+                        class="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3">
+                        <img src="https://i.ytimg.com/vi/7I_HUcT2kmg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBTjbVhkeYSjaWjZkrVa45wWnRriQ"
+                            alt="image" class="w-full" />
+                        <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+                            <h3>
+                                <a href="javascript:void(0)"
+                                    class="text-dark dark:text-white hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
+                                    Extra Credits
+                                </a>
+                            </h3>
+                            <p class="text-base leading-relaxed text-body-color mb-7">
+                                Extra Credits is a YouTube channel that mainly focuses on game design, history, and
+                                culture. They explore various topics related to the gaming world, such as game
+                                development, storytelling, and the impact of video games on society. Over the years, the
+                                channel has become a well-known source of information for anyone interested in game
+                                design and related topics.
+                            </p>
+                            <a href="https://www.youtube.com/@extracredits"
+                            class="inline-block py-2 text-base font-medium transition border rounded-full text-body-color hover:border-primary hover:bg-blue-600 border-gray-300 px-7 hover:text-white dark:border-dark-300 dark:text-dark-600">
+                            Let's Learn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== Cards Section End -->
+
+
+
+    <script src="script.js">  </script>
+</body>
+
+</html>
